@@ -1,0 +1,19 @@
+<h1>List of Studentsssssss</h1>
+<a routerLink="/create" class="btn btn-success">Create Student</a>
+<br/><br/>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td><p>{{student.name}}</p></td>
+        <td><p>{{student.age}}</p></td>
+        <td><p>{{student.gender}}</p></td>
+      </tr>
+    </tbody>
+  </table>
